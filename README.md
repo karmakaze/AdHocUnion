@@ -29,7 +29,7 @@ final class AltString implements IntegerOrString {
 ```
 
 This compiles and works in Java 17+ (where sealed types were fully introduced), as long as:
-- Each class listed in the permits clause exists and is in the same package, or you explicitly use the permits clause.
+- Each class listed in the permits clause exists and is in the same package, or you explicitly use the permits clause and in the same named module.
 - The implementing classes (AltBoolean, AltInteger, AltString) are final (sealed or non-sealed).
 
 Then they can be used as follows:
